@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "f47e8714568c8cbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ecd1fcd6525de79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18f07508129bb98d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction.md"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "97c045ccbdbea0d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5fc84ea5389e2c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04373070bacda87a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8e2f3c2e3f5d69a7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9aedf7e2aa447e3b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "51b302e8ff48d2e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "016e75bde50f688d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "431da20aca1a89ed",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "706fe5e21cf2a991",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a04be850c77b30e9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "51ba36e5ad3c1b8a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "cb7a65081b261f79",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "18f07508129bb98d",
+  "lastOpenFiles": [
+    "MATH REFRESHER.MD",
+    "NOTE RULES.md",
+    "Pasted image 20261115105213.png",
+    "Pasted image 20261115105146.png",
+    "Pasted image 20261115104932.png",
+    "3. Intro to Red Teaming AI/Manipulating the Model.md",
+    "3./Introduction.md",
+    "3. Intro to Red Teaming AI/Introduction.md",
+    "3. Intro to Red Teaming AI",
+    "1. Fundamentals of AI/Supervised Learning Algorithms.md",
+    "3.",
+    "2. Applications of AI in InfoSec/Introduction.md.md",
+    "2. Applications of AI in InfoSec",
+    "1. Fundamentals of AI/Introduction.md",
+    "1. Fundamentals of AI/LR.png",
+    "2./Introduction.md.md",
+    "2."
+  ]
+}
