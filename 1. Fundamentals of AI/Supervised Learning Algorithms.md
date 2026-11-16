@@ -373,6 +373,82 @@ It stops if...
 
 This is a probabilistic algorithm used for classification tasks.
 
+It's based on a concept, that the probably of something happening is based on prior knowledge or observations.
+
+## Bayes Theorem
+
+> Allows us to calculate the probability of something happening, given another event has occurred.
+
+<3 the theorem!
+
+```
+P(A|B) = [P(B|A) * P(A)] / P(B)
+```
+
+- `P(A|B)`: The posterior probability of event `A` happening, given that event `B` has already happened.
+- `P(B|A)`: The likelihood of event `B` happening given that event `A` has already happened.
+- `P(A)`: The prior probability of event `A` happening.
+- `P(B)`: The prior probability of event `B` happening.
+
+---
+
+Consider...
+
+- The prevalence of the disease in the population is 1%, so `P(A) = 0.01`.
+- The test is 95% accurate, meaning if someone has the disease, they will test positive 95% of the time, so `P(B|A) = 0.95`.
+- The test has a false positive rate of 5%, meaning if someone does not have the disease, they will test positive 5% of the time.
+- The probability of testing positive, `P(B)`, can be calculated using the law of total probability.
+
+
+To calculate P(B):
+```
+P(B) = P(B|A) * P(A) + P(B|¬A) * P(¬A)
+```
+- `P(¬A)`: The probability of not having the disease, which is `1 - P(A) = 0.99`.
+- `P(B|¬A)`: The probability of testing positive given that the person does not have the disease, which is the false positive rate, `0.05`.
+
+```
+P(B) = (0.95 * 0.01) + (0.05 * 0.99)
+     = 0.0095 + 0.0495
+     = 0.059
+```
+Finally we use bayes' theorem:
+```
+P(A|B) = [P(B|A) * P(A)] / P(B)
+        = (0.95 * 0.01) / 0.059
+        = 0.0095 / 0.059
+        ≈ 0.161
+```
+
+> The prob of someone having a disease and testing positive is 16.1%!
+
+## So how does Naive Bayes' work then?
+
+It leverages Bayes' theorem to predict the probability of a data point belonging to a particular class given its features.
+
+it assumes that the presence or absence of one feature doesn't effect the presence or absence of any other feature, given that we know the class label.
+
+The Process:
+
+1. Calculate the probability of each class, before considering it's features.
+2. Calculate the likelyhood of observing each feature given each class.
+3. Apply Bayes' Theorem.(Calculate the posterior probability).
+4.  Finally, the algorithm assigns the data point to the class with the highest posterior probability.
+
+Types of Naive bayes:
+
+- `Gaussian Naive Bayes:`if predicting whether a customer will purchase a product based on their age and income, `Gaussian Naive Bayes` could be used, assuming age and income are normally distributed.
+
+- `Multinomial Naive Bayes:` in spam filtering, the frequency of words like "free" or "money" might be the features, and `Multinomial Naive Bayes` would model the probability of these words appearing in spam and non-spam emails.
+
+- `Bernoulli Naive Bayes:` This type is employed for binary features, where the feature is either present or absent. 
+---
+## Data Assumptions
+
+1. The core assumption is that features are conditionally independent given the class.
+2.  The choice of Naive Bayes classifier (Gaussian, Multinomial, Bernoulli) depends on the assumed distribution of the features.
+3. You need enough data to estimate probabilities accurately.
+
 
 
 ---
