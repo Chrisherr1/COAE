@@ -213,11 +213,165 @@ Imagine you're trying to decide whether to play tennis based on the weather. A d
 
 It involves picking the best feature to split the data at each node.
 
-`Gini impurity`, `entropy`, or `information gain` is used to quantify the homogeneity of the subsets resulting from the split.
+At each node, the tree picks the feature that splits the data best.
 
-The goal is to create splits that result in increasingly pure subsets, where the data points within each subset belong predominantly to the same class.
+It scores the options with Gini `impurity, entropy, or information gain`.
+
+`Gini Impurity` gives up the probability of misclassifying a randomly chosen element from a set.
+> A lower Gini means the set is more pure.
+
+```
+Gini(S) = 1 - Σ (pi)^2
+```
+S = Dataset, pi = number of elements in the set
+
+Gini Impurity would be calculated for 2 classes would be 
+
+Assuming...
+
+Class A = 30 elements
+Class B = 20 elements
+
+```
+Gini(S) = 1 - (pi)^
+
+pi = pA + pB = (elements(A)/ Total Number of elements) + (elements(B)/ Total Number of elements)
+
+Therefore, 1 - 0.52 = 0.48
+
+This would be the Gini Impurity for the dataset.
+```
 
 ---
+
+### Entropy 
+
+It measures the disorder/uncertainty in a set.
+
+> Lower is better.
+
+```
+Entropy(S) = - Σ pi * log2(pi)
+```
+
+S = dataset, pi = proportional to elements belonging to a class (i) in the set.
+
+Assuming..
+
+- Proportion of class `A`: `pA = 0.6`
+- Proportion of class `B`: `pB = 0.4`
+
+```
+Entropy(S) = - (0.6 * log2(0.6) + 0.4 * log2(0.4))
+
+= 0.970954
+```
+
+> You probably just use a calculator, but note you need to be wary that most calculators don't convert the log2 correctly. 
+
+---
+### Information Gain
+
+It measures the reduction in entropy achieve by splitting a set based on a particular feature.
+
+The feature with the highest information again is chosen for the split.
+
+```
+Information Gain(S, A) = Entropy(S) - Σ ((|Sv| / |S|) * Entropy(Sv))
+```
+
+ `S` = dataset, 
+ `A` = feature being used for splitting, 
+ `Sv` = subset of `S` for which feature `A` has value `v`.
+
+Assuming 50 instances in 2 classes A and B.
+
+Suppose we consider a feature F that can take values 1 and 2.
+
+AND
+
+The distribution looks like...
+
+- For `F = 1`: 30 instances, 20 class `A`, 10 class `B`
+- For `F = 2`: 20 instances, 10 class `A`, 10 class `B`
+
+Step 1 : Calculate entropy of the entire dataset S.
+	```
+	Entropy(S) = - (30/50 * log2(30/50) + 20/50 * log2(20/50)) 
+	= - (0.6 * log2(0.6) + 0.4 * log2(0.4)) 
+	= - (0.6 * (-0.73697) + 0.4 * (-1.32193)) 
+	= 0.970954
+	```
+Step 2 : Calculate the entropy for each subset Sv.
+
+- For `F = 1`:
+    - Proportion of class `A`: `pA = 20/30 = 0.6667`
+    - Proportion of class `B`: `pB = 10/30 = 0.3333`
+    - Entropy(S1) = `- (0.6667 * log2(0.6667) + 0.3333 * log2(0.3333)) = 0.9183`
+- For `F = 2`:
+    - Proportion of class `A`: `pA = 10/20 = 0.5`
+    - Proportion of class `B`: `pB = 10/20 = 0.5`
+    - Entropy(S2) = `- (0.5 * log2(0.5) + 0.5 * log2(0.5)) = 1.0`
+
+Step 3 : Calculate the weighted Average entropy of subsets.
+```
+Weighted Entropy = (|S1| / |S|) * Entropy(S1) + (|S2| / |S|) * Entropy(S2) 
+= (30/50) * 0.9183 + (20/50) * 1.0 
+= 0.55098 + 0.4 
+= 0.95098
+```
+
+Step 4:  Calculate the information gain
+
+```
+Information Gain(S, F) = Entropy(S) - Weighted Entropy 
+= 0.970954 - 0.95098 
+= 0.019974
+```
+
+---
+### Building the Tree
+
+The tree starts with the root node and selectes the feature that best splits the data based on either Gini impurity , entropy, or information gain.
+
+The features becomes the internal node and branches are created for each possible value or range of values of that feature.
+
+The data is then divided into subsets based on the branches. 
+
+The process continues recurisvely for each subset until a stopping citerion is met.
+
+It stops if...
+
+1. The Tree hits a max depth
+2. The number of data points in a node falls below a threshold.
+3. All data points in a node belong to the same class, so no point in splitting.
+
+---
+# The real method when turning table data into a tree.
+
+1. Identify features that best separate the yes and no instances.
+2. Calculate each feature's information gain and Gini impurity.
+> By doing this, you can find which provides the most information for the split.
+
+3. Find the one with highest information gain.
+4.  You'll do this recursively until a stopping criterion is met. (as seen above).
+5. Then once the tree is done you can use it to predict behavior.
+
+---
+## Data Assumptions
+
+1.  They are more flexible than linear regressions. They can handle linear and non-linear relationships between features and the target variable.
+2. The data doesn't need to be distributed, so it's nice.
+3. Outliers are fine, the algorithm doesn't care much about them.
+
+---
+---
+---
+# Naive Bayes
+
+> Used in spam filtering
+
+This is a probabilistic algorithm used for classification tasks.
 
 
 

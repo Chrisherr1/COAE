@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "file": "1. Fundamentals of AI/Supervised Learning Algorithms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction.md"
+              "title": "Supervised Learning Algorithms"
             }
           }
         ]
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "file": "1. Fundamentals of AI/Supervised Learning Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "file": "1. Fundamentals of AI/Supervised Learning Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Applications of AI in InfoSec/Introduction.md.md",
+                "file": "1. Fundamentals of AI/Supervised Learning Algorithms.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,17 +191,18 @@
   },
   "active": "18f07508129bb98d",
   "lastOpenFiles": [
+    "2. Applications of AI in InfoSec/Introduction.md",
+    "1. Fundamentals of AI/Supervised Learning Algorithms.md",
+    "3. Intro to Red Teaming AI/Manipulating the Model.md",
     "MATH REFRESHER.MD",
     "2. Applications of AI in InfoSec/Introduction.md.md",
     "NOTE RULES.md",
     "Pasted image 20261115105213.png",
     "Pasted image 20261115105146.png",
     "Pasted image 20261115104932.png",
-    "3. Intro to Red Teaming AI/Manipulating the Model.md",
     "3./Introduction.md",
     "3. Intro to Red Teaming AI/Introduction.md",
     "3. Intro to Red Teaming AI",
-    "1. Fundamentals of AI/Supervised Learning Algorithms.md",
     "3.",
     "2. Applications of AI in InfoSec",
     "1. Fundamentals of AI/Introduction.md",
