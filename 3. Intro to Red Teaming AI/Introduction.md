@@ -1,11 +1,9 @@
-Before we can assess the security of ML-based systems, it is essential to establish a solid foundation for security assessments of ML-based systems.
-
-This section will go over a broad overview of security risks and attack vectors in each interconnected components that make up the ML-system.
 
 Red teaming is made up of:
 
-`Red Team Assessments`: Can be traditional penetration testing with Social engineering.
-`Vulnerability Assessments`: More automated but focuses on finding known vulnerabilities within an org and documenting them.
+* `Red Team Assessments`: Can be traditional penetration testing with Social engineering.
+
+* `Vulnerability Assessments`: More automated but focuses on finding known vulnerabilities within an org and documenting them.
 
 > `Nessus` or `OpenVAS` are common scanners for Vulnerability Assessments.
 

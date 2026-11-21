@@ -449,7 +449,123 @@ Types of Naive bayes:
 2.  The choice of Naive Bayes classifier (Gaussian, Multinomial, Bernoulli) depends on the assumed distribution of the features.
 3. You need enough data to estimate probabilities accurately.
 
+---
+---
+---
+## Support Vector Machines(SVMs)
 
+Support Vector Machines(SVMs) are powerful supervised learning algorithms for classification and regression tasks.
+
+They are great at handling high-dimensional data and complex non-linear relationships between features and the target variable.
+
+SVMs aim to find the optimal hyperplane that maximally separates different classes or fits the data for regression.
+
+## How does it do that?
+
+An SVM aims to find the hyperplane that maximizes the `margin`. 
+
+The `margin` is the distance between the hyperplane and the nearest data points of each class. 
+
+These nearest data points are called `support vectors` and are crucial in defining the hyperplane and the margin.
+
+A larger margin provides more separation between the classes, reducing the risk of misclassification.
+
+## What is Linear SVM?
+
+A `linear SVM` is used when the data is linearly separable, meaning a straight line or hyperplane can perfectly separate the classes.
+
+The goal us ti find the optimal hyperplane that maximizes the margin while correctly classifying all the training data points.
+
+### So how do you find the optimal hyperplane
+
+You pick the hyperplane with the largest `margin`.
+
+Plot emails with the frequency of "free" on x and "money" on y. Spam clusters one way, not-spam the other.
+
+Plenty of lines separate them. The optimal one sits as far as possible from the nearest point of either class.
+
+Those nearest points are the `support vectors`. They define the hyperplane and the margin.
+
+> Move any other point and nothing changes. Move a support vector and the boundary moves with it.
+
+Why bother maximizing it:
+
+1. Tolerates noise. A point can wobble without crossing the line.
+2. Generalizes better to unseen data.
+
+The hyperplane is defined by:
+
+```
+w * x + b = 0
+```
+
+`w` = weight vector, perpendicular to the hyperplane
+`x` = input feature vector
+`b` = bias term, shifts the hyperplane relative to the origin
+
+> Training an SVM is just learning `w` and `b`.
+
+---
+
+## Non-Linear SVM
+
+Most real data isn't linearly separable. No straight line or flat plane splits it cleanly.
+
+### The Kernel Trick
+
+Map the data into a higher-dimensional space where it *is* linearly separable, then find the hyperplane up there.
+
+Red and blue marbles mixed on a table, no line works. Lift some of them off the table and now a flat plane can separate them.
+
+A `kernel function` is what does the lifting.
+
+> A straight hyperplane in the high-dimensional space is a curved decision boundary when you map it back down.
+
+### Kernel Functions
+
+`Polynomial Kernel` - adds polynomial terms (x^2, x^3). Puts curves in the boundary.
+
+`RBF (Radial Basis Function)` - Gaussian based. The default workhorse, handles complex patterns.
+
+`Sigmoid Kernel` - same shape as the sigmoid from logistic regression.
+
+Which one you pick depends on the data and how complex you want the model.
+
+> Image classification needs this. Fur texture, ear shape and facial features don't relate linearly, so cat vs dog won't separate without a kernel.
+
+---
+
+### The SVM Function
+
+Finding the hyperplane is an optimization problem.
+
+```
+Minimize: 1/2 ||w||^2
+Subject to: yi(w * xi + b) >= 1 for all i
+```
+
+`w` = weight vector that defines the hyperplane
+`xi` = feature vector for data point i
+`yi` = class label for point i (-1 or 1)
+`b` = bias term
+
+`||w||` is the norm, see [[MATH REFRESHER]].
+
+Smaller `||w||` means a wider margin, so minimizing it *is* maximizing the margin.
+
+The constraint forces every point to be on the correct side AND at least 1 margin-unit clear of the boundary.
+
+> Shrink the weights, but not so far that points end up on the wrong side.
+
+---
+
+## Data Assumptions
+
+SVMs assume very little, which is why they travel well.
+
+1. `No distributional assumptions` - doesn't care how the data is distributed.
+2. `Handles high dimensionality` - fine even when you have more features than data points.
+3. `Robust to outliers` - it chases the margin instead of trying to fit every point.
 
 ---
 ---
