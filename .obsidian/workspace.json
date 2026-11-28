@@ -13,54 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "5. LLM Output Attacks/Insecure Output Handling/Function Calling with LLMs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Function Calling with LLMs"
             }
           },
           {
-            "id": "3236e50079ad192a",
+            "id": "6ce48f0244705ba6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. LLM Output Attacks/Insecure Output Handling/Cross-site Scripting with LLMs.md",
+                "file": "1. Fundamentals of AI/Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross-site Scripting with LLMs"
+              "title": "Introduction"
             }
           },
           {
-            "id": "b01d82db5597ede8",
+            "id": "1012884d3b8d380b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. LLM Output Attacks/Insecure Output Handling/SQL Injection with LLMs.md",
+                "file": "5. LLM Output Attacks/Insecure Output Handling/Exfilration Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Injection with LLMs"
-            }
-          },
-          {
-            "id": "9060ef37df32e3c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Prompt Injection Attacks/5. Prompt Injection Mitigations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. Prompt Injection Mitigations"
+              "title": "Exfilration Attacks"
             }
           }
         ],
@@ -143,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. LLM Output Attacks/Insecure Output Handling/SQL Injection with LLMs.md",
+                "file": "5. LLM Output Attacks/Insecure Output Handling/Function Calling with LLMs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,21 +218,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "b01d82db5597ede8",
+  "active": "1012884d3b8d380b",
   "lastOpenFiles": [
-    "5. LLM Output Attacks/Insecure Output Handling/Cross-site Scripting with LLMs.md",
+    "4. Prompt Injection Attacks/Assessment..md",
+    "11. AI Privacy/Privacy Threats and Attack Fundamentals.md",
     "5. LLM Output Attacks/Insecure Output Handling/SQL Injection with LLMs.md",
-    "5. LLM Output Attacks/Insecure Output Handling",
+    "5. LLM Output Attacks/Insecure Output Handling/Function Calling with LLMs.md",
+    "5. LLM Output Attacks/Insecure Output Handling/Exfilration Attacks.md",
+    "5. LLM Output Attacks/Insecure Output Handling/Cross-site Scripting with LLMs.md",
+    "5. LLM Output Attacks/Insecure Output Handling/Code Injection with LLMs.md",
     "4. Prompt Injection Attacks/3. Jailbreaking.md",
     "4. Prompt Injection Attacks/1. Prompt Injection & Sensitive disclosure..md",
+    "4. Prompt Injection Attacks/5. Prompt Injection Mitigations.md",
+    "4. Prompt Injection Attacks/4. Tools to Help Secure AI.md",
+    "4. Prompt Injection Attacks/2. Indirect Prompt Injection.md",
+    "1. Fundamentals of AI/Introduction.md",
+    "11. AI Privacy",
+    "file:/Users/christianherrera/Documents/CWES/API ATTACKS/2)Overview  OWASP API TOP 10.md",
+    "file:/Users/christianherrera/Desktop/Organized Desktop/A. HTTP Verb Tampering - Methodology.md",
     "README.md",
+    "Images/Screenshot 2026-11-23 at 6.05.04 PM.png",
+    "Untitled 1.md",
+    "5. LLM Output Attacks/Abuse Attacks",
+    "5. LLM Output Attacks/Insecure Output Handling",
     "5. LLM Output Attacks",
     "NOTE RULES.md",
-    "4. Prompt Injection Attacks/5. Prompt Injection Mitigations.md",
     "Images/Pasted image 20261122081929.png",
-    "4. Prompt Injection Attacks/2. Indirect Prompt Injection.md",
-    "4. Prompt Injection Attacks/4. Tools to Help Secure AI.md",
-    "4. Prompt Injection Attacks/Assessment..md",
     "Images/Pasted image 20261120172437.png",
     "3. Intro to Red Teaming AI/Introduction.md",
     "MATH REFRESHER.MD",
@@ -261,14 +258,9 @@
     "Images/Pasted image 20261115104932.png",
     "2. Applications of AI in InfoSec/Spam Classification Example.ipynb",
     "file:/Users/christianherrera/Downloads/Practice/Practice.md",
-    "1. Fundamentals of AI/Introduction.md",
-    "2. Applications of AI in InfoSec/Introduction.md.md",
-    "3./Introduction.md",
     "3. Intro to Red Teaming AI",
     "3.",
     "2. Applications of AI in InfoSec",
-    "1. Fundamentals of AI/LR.png",
-    "2./Introduction.md.md",
-    "2."
+    "1. Fundamentals of AI/LR.png"
   ]
 }
