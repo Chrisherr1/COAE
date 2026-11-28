@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MATH REFRESHER.MD",
+                "file": "5. LLM Output Attacks/Insecure Output Handling/Exfilration Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH REFRESHER"
+              "title": "Exfilration Attacks"
             }
           }
         ],
@@ -112,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "51b302e8ff48d2e6",
@@ -219,6 +220,7 @@
   },
   "active": "1012884d3b8d380b",
   "lastOpenFiles": [
+    "MATH REFRESHER.MD",
     "5. LLM Output Attacks/Insecure Output Handling/Exfilration Attacks.md",
     "4. Prompt Injection Attacks/Assessment..md",
     "11. AI Privacy/Privacy Threats and Attack Fundamentals.md",
@@ -245,7 +247,6 @@
     "Images/Pasted image 20261122081929.png",
     "Images/Pasted image 20261120172437.png",
     "3. Intro to Red Teaming AI/Introduction.md",
-    "MATH REFRESHER.MD",
     "3. Intro to Red Teaming AI/Manipulating the Model.md",
     "2. Applications of AI in InfoSec/Introduction.md",
     "2. Applications of AI in InfoSec/Spam Classification Example.md",
